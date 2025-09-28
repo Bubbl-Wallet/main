@@ -83,11 +83,11 @@ bubble-wallet/
 
 | Chain     | Contract | Address |
 |-----------|----------|---------|
-| Base      | Multisig | 0x...   |
-| Flow      | Multisig | 0x...   |
-| Rootstock | Multisig | 0x...   |
+| Flow      | MasterCopy | [0x48f3b5dC20C0eb4F1eb70f5D6aBe2fD8E60d5259](https://evm-testnet.flowscan.io/address/0x48f3b5dC20C0eb4F1eb70f5D6aBe2fD8E60d5259?tab=contract)   |
+| Rootstock | MasterCopy | [0x48f3b5dC20C0eb4F1eb70f5D6aBe2fD8E60d5259](https://rootstock-testnet.blockscout.com/address/0x48F3B5dc20C0EB4f1EB70F5d6ABe2fd8e60d5259)   |
+| Flow      | ProxyFactory | [0xCdEfcE8B1b2fA23cbdd4c381B2D3b0A79366dA0a](https://evm-testnet.flowscan.io/address/0xCdEfcE8B1b2fA23cbdd4c381B2D3b0A79366dA0a?tab=contract)   |
+| Rootstock | ProxyFactory | [0xCdEfcE8B1b2fA23cbdd4c381B2D3b0A79366dA0a](https://evm-testnet.flowscan.io/address/0xCdEfcE8B1b2fA23cbdd4c381B2D3b0A79366dA0a?tab=contract)   |
 
-(This section will be updated as contracts are deployed to testnet/mainnet.)
 
 ## ⚙️ Hardware Specifications (for hackathon)
 
@@ -148,8 +148,6 @@ npx hardhat compile
 ```
 
 Run desktop app (via Tauri):
-
-*You will have to download and extract the windows build of python-build-standalone to `src-tauri/python-runtime/windows` from [here](https://github.com/astral-sh/python-build-standalone) according to your platform*
 
 ```bash
 npm run tauri dev
