@@ -149,6 +149,8 @@ npx hardhat compile
 
 Run desktop app (via Tauri):
 
+*You will have to download and extract the windows build of python-build-standalone to `src-tauri/python-runtime/windows` from [here](https://github.com/astral-sh/python-build-standalone) according to your platform*
+
 ```bash
 npm run tauri dev
 ```
