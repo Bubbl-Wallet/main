@@ -37,6 +37,7 @@ import {
 } from "@/stores/useNetworkStore";
 import useWalletStore from "@/stores/useWalletStore";
 import useDashboardStore from "@/stores/useDashboardStore";
+import { Button } from "@/components/ui/button";
 
 const WalletDashboard = () => {
   const router = useRouter();
@@ -289,7 +290,7 @@ const WalletDashboard = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3 mb-2">
                 <button
                   onClick={() => navigateTo("/send")}
                   className="bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-lg p-3 text-center transition-colors"
@@ -303,6 +304,13 @@ const WalletDashboard = () => {
                   <div className="text-xs">Receive</div>
                 </button>
               </div>
+
+              <Button
+                onClick={() => navigateTo("/transaction")}
+                className="bg-white/20 backdrop-blur-sm w-full hover:bg-white/30 rounded-lg p-3 text-center transition-colors"
+              >
+                <div className="text-xs">Transaction History</div>
+              </Button>
             </div>
 
             <Card>

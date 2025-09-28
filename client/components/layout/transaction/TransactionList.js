@@ -105,7 +105,7 @@ const TransactionList = ({
 
   if (isLoading && transactions.length === 0) {
     return (
-      <Card>
+      <Card className="m-4">
         <CardContent className="flex flex-col items-center justify-center py-12">
           <Loader2 className="w-8 h-8 mb-4 animate-spin text-muted-foreground" />
 
@@ -270,12 +270,12 @@ const TransactionList = ({
                     </span>
                   </div>
 
-                  <Badge
+                  {/* <Badge
                     variant="outline"
                     className={`text-xs ${getStatusColor(transaction.status)}`}
                   >
                     {getStatusText(transaction.status)}
-                  </Badge>
+                  </Badge> */}
                 </div>
 
                 <div className="ml-4 flex items-center space-x-2">
