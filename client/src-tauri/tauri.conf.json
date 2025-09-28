@@ -32,6 +32,21 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
+    ],
+    "resources": [
+      "python-runtime",
+      "python_client",
+      "python.exe",
+      "python.pdb",
+      "python3.dll",
+      "python3.pdb",
+      "python310.dll",
+      "python310.pdb",
+      "pythonw.exe",
+      "pythonw.pdb",
+      "vcruntime140.dll",
+      "vcruntime140_1.dll",
+      "vcruntime140_threads.dll"
     ]
   },
   "plugins": {

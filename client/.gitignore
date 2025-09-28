@@ -40,3 +40,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python runtime
+src-tauri/python-runtime
+src-tauri/python
+src-tauri/python.exe
+src-tauri/python.pdb
+src-tauri/python3.dll
+src-tauri/python3.pdb
+src-tauri/python310.dll
+src-tauri/python310.pdb
+src-tauri/pythonw.exe
+src-tauri/pythonw.pdb
+src-tauri/vcruntime140.dll
+src-tauri/vcruntime140_1.dll
+src-tauri/vcruntime140_threads.dll
