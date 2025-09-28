@@ -66,21 +66,21 @@ const ExecuteTransactionStep = ({
         transactionData.data,
         verifiedPin,
         `{
-  "to": "${transactionData.recipient}",
-  "value": "${transactionData.amount}",
-  "data": "${transactionData.data}",
-  "current_balance": "25.0",
-  "whitelisted_addresses": [
-    "0xA2d6267B5b167Ee27174BfDa808408F90391D949"
-  ],
-  "blocked_addresses": [
-    "0xf79ed4531139db9Be79a83245F2A2afEeA5b448B",
-    "0x3C700d88616C9e186aed7dd59B2e7f60819bf863"
-  ],
-  "blocked_data_signatures": [
-    "0xdeadbeef"
-  ]
-}`
+          "to": "${transactionData.recipient}",
+          "value": "${transactionData.amount}",
+          "data": "${transactionData.data}",
+          "current_balance": "25.0",
+          "whitelisted_addresses": [
+            "0xA2d6267B5b167Ee27174BfDa808408F90391D949"
+          ],
+          "blocked_addresses": [
+            "0xf79ed4531139db9Be79a83245F2A2afEeA5b448B",
+            "0x3C700d88616C9e186aed7dd59B2e7f60819bf863"
+          ],
+          "blocked_data_signatures": [
+            "0xdeadbeef"
+          ]
+        }`
       );
 
       console.log("llmSignaturePayload", llmSignaturePayload);

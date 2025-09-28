@@ -29,9 +29,10 @@ export default function useWallet() {
   const checkWallet = async () => {
     setIsInitializing(true);
     try {
-      const checkResponse = await invoke("is_wallet_exists", {});
+      let checkResponse = await invoke("is_wallet_exists", {});
 
       console.log(checkResponse);
+      checkResponse = checkResponse["exists"];
 
       setIsWalletExists(checkResponse);
 
