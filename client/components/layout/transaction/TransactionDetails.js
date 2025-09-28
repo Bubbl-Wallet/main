@@ -178,22 +178,22 @@ const TransactionDetails = ({
             </div>
 
             <div className="text-right">
-              {signer.signed ? (
-                <div>
-                  <Badge className="text-green-600 bg-green-50 border-green-200 mb-1">
-                    Signed
-                  </Badge>
-                  {signer.signedAt && (
-                    <div className="text-xs text-muted-foreground">
-                      {formatDateTime(signer.signedAt)}
-                    </div>
-                  )}
-                </div>
-              ) : (
+              {/* {signer.signed ? ( */}
+              <div>
+                <Badge className="text-green-600 bg-green-50 border-green-200 mb-1">
+                  Signed
+                </Badge>
+                {signer.signedAt && (
+                  <div className="text-xs text-muted-foreground">
+                    {formatDateTime(signer.signedAt)}
+                  </div>
+                )}
+              </div>
+              {/* ) : (
                 <Badge variant="outline">
                   {signer.type === "ai" ? "AI Pending" : "Pending"}
                 </Badge>
-              )}
+              )} */}
             </div>
           </div>
         ))}
@@ -390,13 +390,13 @@ const TransactionDetails = ({
 
           <div className="space-y-3">
             <h3 className="font-medium">Transaction Nonce</h3>
-            <div className="bg-muted p-3 rounded-lg">
+            {/* <div className="bg-muted p-3 rounded-lg">
               <CopyableField
                 label="Nonce"
                 value={transaction.nonce.toString()}
                 field="nonce"
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="space-y-3">

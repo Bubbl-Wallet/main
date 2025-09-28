@@ -5,12 +5,14 @@ import {
   Activity,
   RefreshCw,
   TrendingUp,
+  ArrowLeft,
 } from "lucide-react";
 import React from "react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRouter } from "next/navigation";
 
 const TransactionHeader = ({
   onRefresh,
@@ -20,6 +22,8 @@ const TransactionHeader = ({
   totalTransactions,
   onNavigateToAISend,
 }) => {
+  const router = useRouter();
+
   const successCount = totalTransactions - pendingCount;
   const successRate =
     totalTransactions > 0
@@ -29,11 +33,17 @@ const TransactionHeader = ({
   return (
     <div className="space-y-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 p-4">
       <div className="flex pb-4 border-b items-start justify-between">
-        <div>
-          <h1 className="text-2xl font-bold">Transaction History</h1>
+        <div className="flex gap-1">
+          <Button variant="ghost" size="sm" onClick={() => router.back()}>
+            <ArrowLeft className="w-4 h-4" />
+          </Button>
 
-          <div className="space-y-2 text-sm text-muted-foreground">
-            <p>View and manage your blockchain transactions</p>
+          <div>
+            <h1 className="text-2xl font-bold">Transaction History</h1>
+
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <p>View and manage your blockchain transactions</p>
+            </div>
           </div>
         </div>
 
